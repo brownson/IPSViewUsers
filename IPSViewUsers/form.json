@@ -1,0 +1,31 @@
+{ 
+	"elements": [
+		{  "type": "List", 
+		   "name": "UserList", 
+		   "caption": "UserList", 
+		   "rowCount": 15, 
+		   "add": true, 
+		   "delete": true,
+		   "changeOrder" : false, 
+		   "loadValuesFromConfiguration" : true, 
+		   "sort": { "column": "UserName", "direction": "ascending" },
+		   "columns": [ { "caption": "UserName", "name": "UserName", "width": "150px", "add": "",  "edit": { "type": "ValidationTextBox" }, "save":true}, 
+						{ "caption": "UserPwd",  "name": "UserPwd",  "width": "150px", "add": "",  "edit": { "type": "PasswordTextBox" }, "save":true}, 
+						{ "caption": "ViewID",   "name": "ViewID",   "width": "auto",  "add": 0,   "edit": { "type": "SelectMedia" }, "save":true }
+					 ],
+		   "values": []
+		}
+	], 
+	"actions": [ ] ,
+	"status": [ {
+		"code": 200,
+		"caption": "Invalid User Data",
+		"icon": "inactive"
+	},{
+		"code": 201,
+		"caption": "Error storing User Data",
+		"icon": "inactive"
+	}]
+}
+
+ 
